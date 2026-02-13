@@ -1,4 +1,6 @@
 #!/usr/bin/env bash
 DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 cd "${DIR}/../Resources/IPMIView"
-"${DIR}/../Resources/IPMIView/Contents/Home/bin/java" -jar IPMIView20.jar
+# Explicitly export JAVA_HOME so the KVM Console launches using the same Java
+export JAVA_HOME="${DIR}/../Resources/IPMIView/Contents/Home"
+"${JAVA_HOME}/bin/java" -jar IPMIView20.jar
