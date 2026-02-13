@@ -20,7 +20,7 @@ if which curl >/dev/null; then
     echo "[WARNING!] Problem parsing latest version..."
     echo "Falling back to last known version."
     echo "Please file an issue at https://github.com/TheCase/IPMIView.app/issues regarding latest version discovery."
-    DOWNLOAD_FILENAME="IPMIView_2.21.1_build.230720_bundleJRE_Linux_x64.tar.gz"
+    DOWNLOAD_FILENAME="IPMIView_2.24.0_build.251224_bundleJRE_Linux_x64.tar.gz"
   fi
 
   LOCAL_DOWNLOAD_LOCATION="./SM_download"
